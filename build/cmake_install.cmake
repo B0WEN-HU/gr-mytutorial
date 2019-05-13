@@ -1,4 +1,4 @@
-# Install script for directory: /home/bowen/Documents/GR_learn/gr-howto
+# Install script for directory: /home/bowen/Documents/GR_learn/gr-mytutorial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/howto" TYPE FILE FILES "/home/bowen/Documents/GR_learn/gr-howto/cmake/Modules/howtoConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mytutorial" TYPE FILE FILES "/home/bowen/Documents/GR_learn/gr-mytutorial/cmake/Modules/mytutorialConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/bowen/Documents/GR_learn/gr-howto/build/include/howto/cmake_install.cmake")
-  include("/home/bowen/Documents/GR_learn/gr-howto/build/lib/cmake_install.cmake")
-  include("/home/bowen/Documents/GR_learn/gr-howto/build/swig/cmake_install.cmake")
-  include("/home/bowen/Documents/GR_learn/gr-howto/build/python/cmake_install.cmake")
-  include("/home/bowen/Documents/GR_learn/gr-howto/build/grc/cmake_install.cmake")
-  include("/home/bowen/Documents/GR_learn/gr-howto/build/apps/cmake_install.cmake")
-  include("/home/bowen/Documents/GR_learn/gr-howto/build/docs/cmake_install.cmake")
+  include("/home/bowen/Documents/GR_learn/gr-mytutorial/build/include/mytutorial/cmake_install.cmake")
+  include("/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/cmake_install.cmake")
+  include("/home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/cmake_install.cmake")
+  include("/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/cmake_install.cmake")
+  include("/home/bowen/Documents/GR_learn/gr-mytutorial/build/grc/cmake_install.cmake")
+  include("/home/bowen/Documents/GR_learn/gr-mytutorial/build/apps/cmake_install.cmake")
+  include("/home/bowen/Documents/GR_learn/gr-mytutorial/build/docs/cmake_install.cmake")
 
 endif()
 
@@ -61,5 +61,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bowen/Documents/GR_learn/gr-howto/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bowen/Documents/GR_learn/gr-mytutorial/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

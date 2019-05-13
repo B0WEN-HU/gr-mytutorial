@@ -1,4 +1,4 @@
-# Install script for directory: /home/bowen/Documents/GR_learn/gr-howto/lib
+# Install script for directory: /home/bowen/Documents/GR_learn/gr-mytutorial/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,10 +37,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xhowto_runtimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmytutorial_runtimex" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-howto-1.0.0git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-howto-1.0.0git.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mytutorial-1.0.0git.so.0.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mytutorial-1.0.0git.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -50,12 +50,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xhowto_runtimex" OR NOT CMAKE_INSTAL
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/bowen/Documents/GR_learn/gr-howto/build/lib/libgnuradio-howto-1.0.0git.so.0.0.0"
-    "/home/bowen/Documents/GR_learn/gr-howto/build/lib/libgnuradio-howto-1.0.0git.so"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/libgnuradio-mytutorial-1.0.0git.so.0.0.0"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/libgnuradio-mytutorial-1.0.0git.so"
     )
   foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-howto-1.0.0git.so.0.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-howto-1.0.0git.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mytutorial-1.0.0git.so.0.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mytutorial-1.0.0git.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -66,10 +66,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xhowto_runtimex" OR NOT CMAKE_INSTAL
   endforeach()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xhowto_runtimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmytutorial_runtimex" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
-    "/home/bowen/Documents/GR_learn/gr-howto/build/lib/libgnuradio-howto.so"
-    "/home/bowen/Documents/GR_learn/gr-howto/build/lib/libgnuradio-howto-1.0.0git.so.0"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/libgnuradio-mytutorial.so"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/libgnuradio-mytutorial-1.0.0git.so.0"
     )
 endif()
 

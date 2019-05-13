@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bowen/Documents/GR_learn/gr-howto
+CMAKE_SOURCE_DIR = /home/bowen/Documents/GR_learn/gr-mytutorial
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bowen/Documents/GR_learn/gr-howto/build
+CMAKE_BINARY_DIR = /home/bowen/Documents/GR_learn/gr-mytutorial/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,17 +80,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -116,7 +105,7 @@ test/fast: test
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"howto_runtime\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"mytutorial_runtime\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -135,16 +124,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-howto/build/CMakeFiles /home/bowen/Documents/GR_learn/gr-howto/build/lib/CMakeFiles/progress.marks
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-howto/build/CMakeFiles 0
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-mytutorial/build/CMakeFiles /home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/CMakeFiles/progress.marks
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-mytutorial/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,75 +154,75 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-lib/CMakeFiles/test-howto.dir/rule:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-howto.dir/rule
-.PHONY : lib/CMakeFiles/test-howto.dir/rule
+lib/CMakeFiles/test-mytutorial.dir/rule:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-mytutorial.dir/rule
+.PHONY : lib/CMakeFiles/test-mytutorial.dir/rule
 
 # Convenience name for target.
-test-howto: lib/CMakeFiles/test-howto.dir/rule
+test-mytutorial: lib/CMakeFiles/test-mytutorial.dir/rule
 
-.PHONY : test-howto
+.PHONY : test-mytutorial
 
 # fast build rule for target.
-test-howto/fast:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/build
-.PHONY : test-howto/fast
+test-mytutorial/fast:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/build
+.PHONY : test-mytutorial/fast
 
 # Convenience name for target.
-lib/CMakeFiles/gnuradio-howto.dir/rule:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-howto.dir/rule
-.PHONY : lib/CMakeFiles/gnuradio-howto.dir/rule
+lib/CMakeFiles/gnuradio-mytutorial.dir/rule:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-mytutorial.dir/rule
+.PHONY : lib/CMakeFiles/gnuradio-mytutorial.dir/rule
 
 # Convenience name for target.
-gnuradio-howto: lib/CMakeFiles/gnuradio-howto.dir/rule
+gnuradio-mytutorial: lib/CMakeFiles/gnuradio-mytutorial.dir/rule
 
-.PHONY : gnuradio-howto
+.PHONY : gnuradio-mytutorial
 
 # fast build rule for target.
-gnuradio-howto/fast:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/build
-.PHONY : gnuradio-howto/fast
+gnuradio-mytutorial/fast:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/build
+.PHONY : gnuradio-mytutorial/fast
 
-qa_howto.o: qa_howto.cc.o
+qa_mytutorial.o: qa_mytutorial.cc.o
 
-.PHONY : qa_howto.o
+.PHONY : qa_mytutorial.o
 
 # target to build an object file
-qa_howto.cc.o:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/qa_howto.cc.o
-.PHONY : qa_howto.cc.o
+qa_mytutorial.cc.o:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/qa_mytutorial.cc.o
+.PHONY : qa_mytutorial.cc.o
 
-qa_howto.i: qa_howto.cc.i
+qa_mytutorial.i: qa_mytutorial.cc.i
 
-.PHONY : qa_howto.i
+.PHONY : qa_mytutorial.i
 
 # target to preprocess a source file
-qa_howto.cc.i:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/qa_howto.cc.i
-.PHONY : qa_howto.cc.i
+qa_mytutorial.cc.i:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/qa_mytutorial.cc.i
+.PHONY : qa_mytutorial.cc.i
 
-qa_howto.s: qa_howto.cc.s
+qa_mytutorial.s: qa_mytutorial.cc.s
 
-.PHONY : qa_howto.s
+.PHONY : qa_mytutorial.s
 
 # target to generate assembly for a file
-qa_howto.cc.s:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/qa_howto.cc.s
-.PHONY : qa_howto.cc.s
+qa_mytutorial.cc.s:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/qa_mytutorial.cc.s
+.PHONY : qa_mytutorial.cc.s
 
 square2_ff_impl.o: square2_ff_impl.cc.o
 
@@ -230,7 +230,7 @@ square2_ff_impl.o: square2_ff_impl.cc.o
 
 # target to build an object file
 square2_ff_impl.cc.o:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/square2_ff_impl.cc.o
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/square2_ff_impl.cc.o
 .PHONY : square2_ff_impl.cc.o
 
 square2_ff_impl.i: square2_ff_impl.cc.i
@@ -239,7 +239,7 @@ square2_ff_impl.i: square2_ff_impl.cc.i
 
 # target to preprocess a source file
 square2_ff_impl.cc.i:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/square2_ff_impl.cc.i
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/square2_ff_impl.cc.i
 .PHONY : square2_ff_impl.cc.i
 
 square2_ff_impl.s: square2_ff_impl.cc.s
@@ -248,7 +248,7 @@ square2_ff_impl.s: square2_ff_impl.cc.s
 
 # target to generate assembly for a file
 square2_ff_impl.cc.s:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/square2_ff_impl.cc.s
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/square2_ff_impl.cc.s
 .PHONY : square2_ff_impl.cc.s
 
 square_ff_impl.o: square_ff_impl.cc.o
@@ -257,7 +257,7 @@ square_ff_impl.o: square_ff_impl.cc.o
 
 # target to build an object file
 square_ff_impl.cc.o:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/square_ff_impl.cc.o
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/square_ff_impl.cc.o
 .PHONY : square_ff_impl.cc.o
 
 square_ff_impl.i: square_ff_impl.cc.i
@@ -266,7 +266,7 @@ square_ff_impl.i: square_ff_impl.cc.i
 
 # target to preprocess a source file
 square_ff_impl.cc.i:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/square_ff_impl.cc.i
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/square_ff_impl.cc.i
 .PHONY : square_ff_impl.cc.i
 
 square_ff_impl.s: square_ff_impl.cc.s
@@ -275,35 +275,35 @@ square_ff_impl.s: square_ff_impl.cc.s
 
 # target to generate assembly for a file
 square_ff_impl.cc.s:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/square_ff_impl.cc.s
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/square_ff_impl.cc.s
 .PHONY : square_ff_impl.cc.s
 
-test_howto.o: test_howto.cc.o
+test_mytutorial.o: test_mytutorial.cc.o
 
-.PHONY : test_howto.o
+.PHONY : test_mytutorial.o
 
 # target to build an object file
-test_howto.cc.o:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/test_howto.cc.o
-.PHONY : test_howto.cc.o
+test_mytutorial.cc.o:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/test_mytutorial.cc.o
+.PHONY : test_mytutorial.cc.o
 
-test_howto.i: test_howto.cc.i
+test_mytutorial.i: test_mytutorial.cc.i
 
-.PHONY : test_howto.i
+.PHONY : test_mytutorial.i
 
 # target to preprocess a source file
-test_howto.cc.i:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/test_howto.cc.i
-.PHONY : test_howto.cc.i
+test_mytutorial.cc.i:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/test_mytutorial.cc.i
+.PHONY : test_mytutorial.cc.i
 
-test_howto.s: test_howto.cc.s
+test_mytutorial.s: test_mytutorial.cc.s
 
-.PHONY : test_howto.s
+.PHONY : test_mytutorial.s
 
 # target to generate assembly for a file
-test_howto.cc.s:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/test_howto.cc.s
-.PHONY : test_howto.cc.s
+test_mytutorial.cc.s:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/test_mytutorial.cc.s
+.PHONY : test_mytutorial.cc.s
 
 # Help Target
 help:
@@ -313,25 +313,25 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install"
-	@echo "... test-howto"
-	@echo "... gnuradio-howto"
-	@echo "... rebuild_cache"
+	@echo "... test-mytutorial"
+	@echo "... gnuradio-mytutorial"
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
-	@echo "... qa_howto.o"
-	@echo "... qa_howto.i"
-	@echo "... qa_howto.s"
+	@echo "... rebuild_cache"
+	@echo "... qa_mytutorial.o"
+	@echo "... qa_mytutorial.i"
+	@echo "... qa_mytutorial.s"
 	@echo "... square2_ff_impl.o"
 	@echo "... square2_ff_impl.i"
 	@echo "... square2_ff_impl.s"
 	@echo "... square_ff_impl.o"
 	@echo "... square_ff_impl.i"
 	@echo "... square_ff_impl.s"
-	@echo "... test_howto.o"
-	@echo "... test_howto.i"
-	@echo "... test_howto.s"
+	@echo "... test_mytutorial.o"
+	@echo "... test_mytutorial.i"
+	@echo "... test_mytutorial.s"
 .PHONY : help
 
 
@@ -343,6 +343,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bowen/Documents/GR_learn/gr-howto/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -18,7 +18,6 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    howto_square_ff.xml
-    howto_square2_ff.xml
-    howto_fliker_i.xml DESTINATION share/gnuradio/grc/blocks
+    mytutorial_square_ff.xml
+    mytutorial_square2_ff.xml DESTINATION share/gnuradio/grc/blocks
 )

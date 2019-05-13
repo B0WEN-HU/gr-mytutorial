@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bowen/Documents/GR_learn/gr-mytutorial/lib/qa_mytutorial.cc
+qa_mytutorial.h
+/home/bowen/Documents/GR_learn/gr-mytutorial/lib/qa_mytutorial.h
+
+/home/bowen/Documents/GR_learn/gr-mytutorial/lib/qa_mytutorial.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/home/bowen/Documents/GR_learn/gr-mytutorial/lib/test_mytutorial.cc
+config.h
+/home/bowen/Documents/GR_learn/gr-mytutorial/lib/config.h
+cppunit/TextTestRunner.h
+-
+cppunit/XmlOutputter.h
+-
+gnuradio/unittests.h
+-
+qa_mytutorial.h
+/home/bowen/Documents/GR_learn/gr-mytutorial/lib/qa_mytutorial.h
+iostream
+-
+fstream
+-
+

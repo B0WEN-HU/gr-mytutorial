@@ -1,10 +1,10 @@
-Start testing: May 11 16:04 CST
+Start testing: May 13 12:40 CST
 ----------------------------------------------------------
-1/2 Testing: test_howto
-1/2 Test: test_howto
-Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-howto/build/lib/test_howto_test.sh"
-Directory: /home/bowen/Documents/GR_learn/gr-howto/build/lib
-"test_howto" start time: May 11 16:04 CST
+1/2 Testing: test_mytutorial
+1/2 Test: test_mytutorial
+Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/test_mytutorial_test.sh"
+Directory: /home/bowen/Documents/GR_learn/gr-mytutorial/build/lib
+"test_mytutorial" start time: May 13 12:40 CST
 Output:
 ----------------------------------------------------------
 
@@ -13,28 +13,28 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_howto" end time: May 11 16:04 CST
-"test_howto" time elapsed: 00:00:00
+"test_mytutorial" end time: May 13 12:40 CST
+"test_mytutorial" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 2/2 Testing: qa_square_ff
 2/2 Test: qa_square_ff
-Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-howto/build/python/qa_square_ff_test.sh"
-Directory: /home/bowen/Documents/GR_learn/gr-howto/build/python
-"qa_square_ff" start time: May 11 16:04 CST
+Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/qa_square_ff_test.sh"
+Directory: /home/bowen/Documents/GR_learn/gr-mytutorial/build/python
+"qa_square_ff" start time: May 13 12:40 CST
 Output:
 ----------------------------------------------------------
 ..
 ----------------------------------------------------------------------
-Ran 2 tests in 0.001s
+Ran 2 tests in 0.003s
 
 OK
 <end of output>
-Test time =   0.16 sec
+Test time =   0.17 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_square_ff" end time: May 11 16:04 CST
+"qa_square_ff" end time: May 13 12:40 CST
 "qa_square_ff" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 11 16:04 CST
+End testing: May 13 12:40 CST

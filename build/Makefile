@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bowen/Documents/GR_learn/gr-howto
+CMAKE_SOURCE_DIR = /home/bowen/Documents/GR_learn/gr-mytutorial
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bowen/Documents/GR_learn/gr-howto/build
+CMAKE_BINARY_DIR = /home/bowen/Documents/GR_learn/gr-mytutorial/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ test/fast: test
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"howto_runtime\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"mytutorial_runtime\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -137,9 +137,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-howto/build/CMakeFiles /home/bowen/Documents/GR_learn/gr-howto/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-mytutorial/build/CMakeFiles /home/bowen/Documents/GR_learn/gr-mytutorial/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-howto/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bowen/Documents/GR_learn/gr-mytutorial/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -181,108 +181,121 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
-# Target rules for targets named test-howto
+# Target rules for targets named test-mytutorial
 
 # Build rule for target.
-test-howto: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test-howto
-.PHONY : test-howto
+test-mytutorial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test-mytutorial
+.PHONY : test-mytutorial
 
 # fast build rule for target.
-test-howto/fast:
-	$(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/build
-.PHONY : test-howto/fast
+test-mytutorial/fast:
+	$(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/build
+.PHONY : test-mytutorial/fast
 
 #=============================================================================
-# Target rules for targets named gnuradio-howto
+# Target rules for targets named gnuradio-mytutorial
 
 # Build rule for target.
-gnuradio-howto: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-howto
-.PHONY : gnuradio-howto
+gnuradio-mytutorial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gnuradio-mytutorial
+.PHONY : gnuradio-mytutorial
 
 # fast build rule for target.
-gnuradio-howto/fast:
-	$(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/build
-.PHONY : gnuradio-howto/fast
+gnuradio-mytutorial/fast:
+	$(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/build
+.PHONY : gnuradio-mytutorial/fast
 
 #=============================================================================
-# Target rules for targets named _howto_swig_swig_tag
+# Target rules for targets named mytutorial_swig_swig_doc
 
 # Build rule for target.
-_howto_swig_swig_tag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _howto_swig_swig_tag
-.PHONY : _howto_swig_swig_tag
+mytutorial_swig_swig_doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mytutorial_swig_swig_doc
+.PHONY : mytutorial_swig_swig_doc
 
 # fast build rule for target.
-_howto_swig_swig_tag/fast:
-	$(MAKE) -f swig/CMakeFiles/_howto_swig_swig_tag.dir/build.make swig/CMakeFiles/_howto_swig_swig_tag.dir/build
-.PHONY : _howto_swig_swig_tag/fast
+mytutorial_swig_swig_doc/fast:
+	$(MAKE) -f swig/CMakeFiles/mytutorial_swig_swig_doc.dir/build.make swig/CMakeFiles/mytutorial_swig_swig_doc.dir/build
+.PHONY : mytutorial_swig_swig_doc/fast
 
 #=============================================================================
-# Target rules for targets named howto_swig_swig_2d0df
+# Target rules for targets named _mytutorial_swig_doc_tag
 
 # Build rule for target.
-howto_swig_swig_2d0df: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 howto_swig_swig_2d0df
-.PHONY : howto_swig_swig_2d0df
+_mytutorial_swig_doc_tag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _mytutorial_swig_doc_tag
+.PHONY : _mytutorial_swig_doc_tag
 
 # fast build rule for target.
-howto_swig_swig_2d0df/fast:
-	$(MAKE) -f swig/CMakeFiles/howto_swig_swig_2d0df.dir/build.make swig/CMakeFiles/howto_swig_swig_2d0df.dir/build
-.PHONY : howto_swig_swig_2d0df/fast
+_mytutorial_swig_doc_tag/fast:
+	$(MAKE) -f swig/CMakeFiles/_mytutorial_swig_doc_tag.dir/build.make swig/CMakeFiles/_mytutorial_swig_doc_tag.dir/build
+.PHONY : _mytutorial_swig_doc_tag/fast
 
 #=============================================================================
-# Target rules for targets named howto_swig_swig_doc
+# Target rules for targets named _mytutorial_swig_swig_tag
 
 # Build rule for target.
-howto_swig_swig_doc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 howto_swig_swig_doc
-.PHONY : howto_swig_swig_doc
+_mytutorial_swig_swig_tag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _mytutorial_swig_swig_tag
+.PHONY : _mytutorial_swig_swig_tag
 
 # fast build rule for target.
-howto_swig_swig_doc/fast:
-	$(MAKE) -f swig/CMakeFiles/howto_swig_swig_doc.dir/build.make swig/CMakeFiles/howto_swig_swig_doc.dir/build
-.PHONY : howto_swig_swig_doc/fast
+_mytutorial_swig_swig_tag/fast:
+	$(MAKE) -f swig/CMakeFiles/_mytutorial_swig_swig_tag.dir/build.make swig/CMakeFiles/_mytutorial_swig_swig_tag.dir/build
+.PHONY : _mytutorial_swig_swig_tag/fast
 
 #=============================================================================
-# Target rules for targets named _howto_swig
+# Target rules for targets named mytutorial_swig_swig_2d0df
 
 # Build rule for target.
-_howto_swig: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _howto_swig
-.PHONY : _howto_swig
+mytutorial_swig_swig_2d0df: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mytutorial_swig_swig_2d0df
+.PHONY : mytutorial_swig_swig_2d0df
 
 # fast build rule for target.
-_howto_swig/fast:
-	$(MAKE) -f swig/CMakeFiles/_howto_swig.dir/build.make swig/CMakeFiles/_howto_swig.dir/build
-.PHONY : _howto_swig/fast
+mytutorial_swig_swig_2d0df/fast:
+	$(MAKE) -f swig/CMakeFiles/mytutorial_swig_swig_2d0df.dir/build.make swig/CMakeFiles/mytutorial_swig_swig_2d0df.dir/build
+.PHONY : mytutorial_swig_swig_2d0df/fast
 
 #=============================================================================
-# Target rules for targets named pygen_swig_9053c
+# Target rules for targets named pygen_swig_b0be1
 
 # Build rule for target.
-pygen_swig_9053c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_swig_9053c
-.PHONY : pygen_swig_9053c
+pygen_swig_b0be1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_swig_b0be1
+.PHONY : pygen_swig_b0be1
 
 # fast build rule for target.
-pygen_swig_9053c/fast:
-	$(MAKE) -f swig/CMakeFiles/pygen_swig_9053c.dir/build.make swig/CMakeFiles/pygen_swig_9053c.dir/build
-.PHONY : pygen_swig_9053c/fast
+pygen_swig_b0be1/fast:
+	$(MAKE) -f swig/CMakeFiles/pygen_swig_b0be1.dir/build.make swig/CMakeFiles/pygen_swig_b0be1.dir/build
+.PHONY : pygen_swig_b0be1/fast
 
 #=============================================================================
-# Target rules for targets named pygen_python_adc69
+# Target rules for targets named _mytutorial_swig
 
 # Build rule for target.
-pygen_python_adc69: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pygen_python_adc69
-.PHONY : pygen_python_adc69
+_mytutorial_swig: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _mytutorial_swig
+.PHONY : _mytutorial_swig
 
 # fast build rule for target.
-pygen_python_adc69/fast:
-	$(MAKE) -f python/CMakeFiles/pygen_python_adc69.dir/build.make python/CMakeFiles/pygen_python_adc69.dir/build
-.PHONY : pygen_python_adc69/fast
+_mytutorial_swig/fast:
+	$(MAKE) -f swig/CMakeFiles/_mytutorial_swig.dir/build.make swig/CMakeFiles/_mytutorial_swig.dir/build
+.PHONY : _mytutorial_swig/fast
+
+#=============================================================================
+# Target rules for targets named pygen_python_5c671
+
+# Build rule for target.
+pygen_python_5c671: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pygen_python_5c671
+.PHONY : pygen_python_5c671
+
+# fast build rule for target.
+pygen_python_5c671/fast:
+	$(MAKE) -f python/CMakeFiles/pygen_python_5c671.dir/build.make python/CMakeFiles/pygen_python_5c671.dir/build
+.PHONY : pygen_python_5c671/fast
 
 #=============================================================================
 # Target rules for targets named pygen_apps_9a6dd
@@ -296,6 +309,19 @@ pygen_apps_9a6dd: cmake_check_build_system
 pygen_apps_9a6dd/fast:
 	$(MAKE) -f apps/CMakeFiles/pygen_apps_9a6dd.dir/build.make apps/CMakeFiles/pygen_apps_9a6dd.dir/build
 .PHONY : pygen_apps_9a6dd/fast
+
+#=============================================================================
+# Target rules for targets named doxygen_target
+
+# Build rule for target.
+doxygen_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doxygen_target
+.PHONY : doxygen_target
+
+# fast build rule for target.
+doxygen_target/fast:
+	$(MAKE) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/build
+.PHONY : doxygen_target/fast
 
 # Help Target
 help:
@@ -311,15 +337,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... test-howto"
-	@echo "... gnuradio-howto"
-	@echo "... _howto_swig_swig_tag"
-	@echo "... howto_swig_swig_2d0df"
-	@echo "... howto_swig_swig_doc"
-	@echo "... _howto_swig"
-	@echo "... pygen_swig_9053c"
-	@echo "... pygen_python_adc69"
+	@echo "... test-mytutorial"
+	@echo "... gnuradio-mytutorial"
+	@echo "... mytutorial_swig_swig_doc"
+	@echo "... _mytutorial_swig_doc_tag"
+	@echo "... _mytutorial_swig_swig_tag"
+	@echo "... mytutorial_swig_swig_2d0df"
+	@echo "... pygen_swig_b0be1"
+	@echo "... _mytutorial_swig"
+	@echo "... pygen_python_5c671"
 	@echo "... pygen_apps_9a6dd"
+	@echo "... doxygen_target"
 .PHONY : help
 
 

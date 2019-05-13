@@ -19,14 +19,14 @@
 # The presence of this file turns this directory into a Python package
 
 '''
-This is the GNU Radio HOWTO module. Place your Python package
+This is the GNU Radio MYTUTORIAL module. Place your Python package
 description here (python/__init__.py).
 '''
 
-# import swig generated symbols into the howto namespace
+# import swig generated symbols into the mytutorial namespace
 try:
 	# this might fail if the module is python-only
-	from howto_swig import *
+	from mytutorial_swig import *
 except ImportError:
 	pass
 

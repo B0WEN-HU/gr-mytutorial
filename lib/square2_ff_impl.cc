@@ -26,7 +26,7 @@
 #include "square2_ff_impl.h"
 
 namespace gr {
-  namespace howto {
+  namespace mytutorial {
 
     square2_ff::sptr
     square2_ff::make()
@@ -68,6 +68,6 @@ namespace gr {
       return noutput_items;
     }
 
-  } /* namespace howto */
+  } /* namespace mytutorial */
 } /* namespace gr */
 

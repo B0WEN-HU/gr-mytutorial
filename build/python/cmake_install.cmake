@@ -1,4 +1,4 @@
-# Install script for directory: /home/bowen/Documents/GR_learn/gr-howto/python
+# Install script for directory: /home/bowen/Documents/GR_learn/gr-mytutorial/python
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,13 +38,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES "/home/bowen/Documents/GR_learn/gr-howto/python/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE FILE FILES "/home/bowen/Documents/GR_learn/gr-mytutorial/python/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES
-    "/home/bowen/Documents/GR_learn/gr-howto/build/python/__init__.pyc"
-    "/home/bowen/Documents/GR_learn/gr-howto/build/python/__init__.pyo"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE FILE FILES
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/__init__.pyc"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/__init__.pyo"
     )
 endif()
 

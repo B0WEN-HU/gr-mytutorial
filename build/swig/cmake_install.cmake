@@ -1,4 +1,4 @@
-# Install script for directory: /home/bowen/Documents/GR_learn/gr-howto/swig
+# Install script for directory: /home/bowen/Documents/GR_learn/gr-mytutorial/swig
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,40 +38,40 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial/_mytutorial_swig.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial/_mytutorial_swig.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial/_mytutorial_swig.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE MODULE FILES "/home/bowen/Documents/GR_learn/gr-howto/build/swig/_howto_swig.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE MODULE FILES "/home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/_mytutorial_swig.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial/_mytutorial_swig.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial/_mytutorial_swig.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so"
-         OLD_RPATH "/home/bowen/Documents/GR_learn/gr-howto/build/lib:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial/_mytutorial_swig.so"
+         OLD_RPATH "/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto/_howto_swig.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial/_mytutorial_swig.so")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES "/home/bowen/Documents/GR_learn/gr-howto/build/swig/howto_swig.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE FILE FILES "/home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/mytutorial_swig.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/howto" TYPE FILE FILES
-    "/home/bowen/Documents/GR_learn/gr-howto/build/swig/howto_swig.pyc"
-    "/home/bowen/Documents/GR_learn/gr-howto/build/swig/howto_swig.pyo"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE FILE FILES
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/mytutorial_swig.pyc"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/mytutorial_swig.pyo"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/howto/howto/swig" TYPE FILE FILES
-    "/home/bowen/Documents/GR_learn/gr-howto/swig/howto_swig.i"
-    "/home/bowen/Documents/GR_learn/gr-howto/build/swig/howto_swig_doc.i"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mytutorial/mytutorial/swig" TYPE FILE FILES
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/swig/mytutorial_swig.i"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/mytutorial_swig_doc.i"
     )
 endif()
 

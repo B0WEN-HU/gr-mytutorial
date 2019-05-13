@@ -20,10 +20,10 @@
 ########################################################################
 # Check if there is C++ code at all
 ########################################################################
-if(NOT howto_sources)
+if(NOT mytutorial_sources)
 	MESSAGE(STATUS "No C++ sources... skipping swig/")
 	return()
-endif(NOT howto_sources)
+endif(NOT mytutorial_sources)
 
 ########################################################################
 # Include swig generation macros
@@ -43,23 +43,23 @@ foreach(incdir ${GNURADIO_RUNTIME_INCLUDE_DIRS})
     list(APPEND GR_SWIG_INCLUDE_DIRS ${incdir}/gnuradio/swig)
 endforeach(incdir)
 
-set(GR_SWIG_LIBRARIES gnuradio-howto)
-set(GR_SWIG_DOC_FILE ${CMAKE_CURRENT_BINARY_DIR}/howto_swig_doc.i)
+set(GR_SWIG_LIBRARIES gnuradio-mytutorial)
+set(GR_SWIG_DOC_FILE ${CMAKE_CURRENT_BINARY_DIR}/mytutorial_swig_doc.i)
 set(GR_SWIG_DOC_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
-GR_SWIG_MAKE(howto_swig howto_swig.i)
+GR_SWIG_MAKE(mytutorial_swig mytutorial_swig.i)
 
 ########################################################################
 # Install the build swig module
 ########################################################################
-GR_SWIG_INSTALL(TARGETS howto_swig DESTINATION ${GR_PYTHON_DIR}/howto)
+GR_SWIG_INSTALL(TARGETS mytutorial_swig DESTINATION ${GR_PYTHON_DIR}/mytutorial)
 
 ########################################################################
 # Install swig .i files for development
 ########################################################################
 install(
     FILES
-    howto_swig.i
-    ${CMAKE_CURRENT_BINARY_DIR}/howto_swig_doc.i
-    DESTINATION ${GR_INCLUDE_DIR}/howto/swig
+    mytutorial_swig.i
+    ${CMAKE_CURRENT_BINARY_DIR}/mytutorial_swig_doc.i
+    DESTINATION ${GR_INCLUDE_DIR}/mytutorial/swig
 )

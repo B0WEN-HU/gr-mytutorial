@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1mytutorial_1_1square__ff" kind="class"><name>gr::mytutorial::square_ff</name>
+    <member refid="classgr_1_1mytutorial_1_1square__ff_1a8027746fa46c669596e8afffdba4760b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mytutorial_1_1square__ff_1aea372a60eee6dedf862aa7ba48d7db33" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mytutorial_1_1square__ff__impl" kind="class"><name>gr::mytutorial::square_ff_impl</name>
+    <member refid="classgr_1_1mytutorial_1_1square__ff__impl_1aea7a0a48d921539ef102ef52d331b7cf" kind="function"><name>square_ff_impl</name></member>
+    <member refid="classgr_1_1mytutorial_1_1square__ff__impl_1aa95bca54673e6afbbc262824689f4c71" kind="function"><name>~square_ff_impl</name></member>
+    <member refid="classgr_1_1mytutorial_1_1square__ff__impl_1ac35f506a645951ba0a53d56daf38ced0" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1mytutorial_1_1square__ff__impl_1af600139bf6f5c73c9eae612b1d797317" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1mytutorial" kind="namespace"><name>gr::mytutorial</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a41d6df2c0e3ed1518dbef5c0356afc34" kind="define"><name>MYTUTORIAL_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="square__ff_8h" kind="file"><name>square_ff.h</name>
+  </compound>
+  <compound refid="square__ff__impl_8h" kind="file"><name>square_ff_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_2cb6af6525d9e2ff711837053295a9c2" kind="dir"><name>mytutorial</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

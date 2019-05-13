@@ -18,13 +18,13 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_HOWTO_SQUARE_FF_IMPL_H
-#define INCLUDED_HOWTO_SQUARE_FF_IMPL_H
+#ifndef INCLUDED_MYTUTORIAL_SQUARE_FF_IMPL_H
+#define INCLUDED_MYTUTORIAL_SQUARE_FF_IMPL_H
 
-#include <howto/square_ff.h>
+#include <mytutorial/square_ff.h>
 
 namespace gr {
-  namespace howto {
+  namespace mytutorial {
 
     class square_ff_impl : public square_ff
     {
@@ -44,8 +44,8 @@ namespace gr {
            gr_vector_void_star &output_items);
     };
 
-  } // namespace howto
+  } // namespace mytutorial
 } // namespace gr
 
-#endif /* INCLUDED_HOWTO_SQUARE_FF_IMPL_H */
+#endif /* INCLUDED_MYTUTORIAL_SQUARE_FF_IMPL_H */
 

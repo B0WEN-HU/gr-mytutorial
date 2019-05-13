@@ -1,4 +1,4 @@
-# Install script for directory: /home/bowen/Documents/GR_learn/gr-howto/apps
+# Install script for directory: /home/bowen/Documents/GR_learn/gr-mytutorial/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
