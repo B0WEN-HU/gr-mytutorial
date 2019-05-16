@@ -33,8 +33,21 @@ class qa_multiply_py_ff (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
+        src_data = (0, 1, -2, 5.5, -0.5)
+        expected_result = (0, 2, -4, 11, -1)
+        src = blocks.vector_source_f (src_data)
+        mult = multiply_py_ff (2)
+        snk = blocks.vector_sink_f ()
+
+        self.tb.connect(src, mult)
+        self.tb.connect(mult, snk)
+
         self.tb.run ()
+
         # check data
+        result_data = snk.data ()
+        self.assertFloatTuplesAlmostEqual (expected_result, result_data, 6)
+
 
 
 if __name__ == '__main__':
