@@ -19,5 +19,6 @@
 
 install(FILES
     mytutorial_square_ff.xml
-    mytutorial_square2_ff.xml DESTINATION share/gnuradio/grc/blocks
+    mytutorial_square2_ff.xml
+    mytutorial_multiply_py_ff.xml DESTINATION share/gnuradio/grc/blocks
 )

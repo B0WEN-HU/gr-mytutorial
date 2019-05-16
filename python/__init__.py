@@ -31,4 +31,5 @@ except ImportError:
 	pass
 
 # import any pure python here
+from multiply_py_ff import multiply_py_ff
 #
