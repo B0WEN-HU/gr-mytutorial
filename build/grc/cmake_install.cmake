@@ -41,6 +41,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
     "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_square_ff.xml"
     "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_square2_ff.xml"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_multiply_py_ff.xml"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_qpsk_demod_py_cb.xml"
     )
 endif()
 

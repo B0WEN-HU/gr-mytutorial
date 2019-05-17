@@ -38,13 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE FILE FILES "/home/bowen/Documents/GR_learn/gr-mytutorial/python/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE FILE FILES
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/python/__init__.py"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/python/multiply_py_ff.py"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/python/qpsk_demod_py_cb.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mytutorial" TYPE FILE FILES
     "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/__init__.pyc"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/multiply_py_ff.pyc"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/qpsk_demod_py_cb.pyc"
     "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/__init__.pyo"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/multiply_py_ff.pyo"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/qpsk_demod_py_cb.pyo"
     )
 endif()
 

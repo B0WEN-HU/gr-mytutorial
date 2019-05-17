@@ -36,12 +36,12 @@
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/CMakeFiles/pygen_swig_b0be1.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/CMakeFiles/_mytutorial_swig.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/install/strip.dir
+/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/list_install_components.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/install/local.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/test.dir
-/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/list_install_components.dir
+/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/pygen_python_14d7e.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/edit_cache.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/rebuild_cache.dir
-/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/pygen_python_5c671.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/python/CMakeFiles/install.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/grc/CMakeFiles/install/strip.dir
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/grc/CMakeFiles/edit_cache.dir

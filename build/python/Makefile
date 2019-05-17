@@ -68,6 +68,16 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"mytutorial_runtime\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -90,16 +100,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"mytutorial_runtime\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-python/CMakeFiles/pygen_python_5c671.dir/rule:
-	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/pygen_python_5c671.dir/rule
-.PHONY : python/CMakeFiles/pygen_python_5c671.dir/rule
+python/CMakeFiles/pygen_python_14d7e.dir/rule:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/pygen_python_14d7e.dir/rule
+.PHONY : python/CMakeFiles/pygen_python_14d7e.dir/rule
 
 # Convenience name for target.
-pygen_python_5c671: python/CMakeFiles/pygen_python_5c671.dir/rule
+pygen_python_14d7e: python/CMakeFiles/pygen_python_14d7e.dir/rule
 
-.PHONY : pygen_python_5c671
+.PHONY : pygen_python_14d7e
 
 # fast build rule for target.
-pygen_python_5c671/fast:
-	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f python/CMakeFiles/pygen_python_5c671.dir/build.make python/CMakeFiles/pygen_python_5c671.dir/build
-.PHONY : pygen_python_5c671/fast
+pygen_python_14d7e/fast:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f python/CMakeFiles/pygen_python_14d7e.dir/build.make python/CMakeFiles/pygen_python_14d7e.dir/build
+.PHONY : pygen_python_14d7e/fast
 
 # Help Target
 help:
@@ -189,12 +189,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... list_install_components"
+	@echo "... pygen_python_14d7e"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... pygen_python_5c671"
 	@echo "... install"
 .PHONY : help
 
