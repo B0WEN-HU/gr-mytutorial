@@ -2,6 +2,7 @@
 /usr/local/include/mytutorial/api.h
 /usr/local/include/mytutorial/square_ff.h
 /usr/local/include/mytutorial/square2_ff.h
+/usr/local/include/mytutorial/my_qpsk_demod_cb.h
 /usr/local/lib/libgnuradio-mytutorial-1.0.0git.so.0.0.0
 /usr/local/lib/libgnuradio-mytutorial-1.0.0git.so
 /usr/local/lib/libgnuradio-mytutorial.so
@@ -25,6 +26,7 @@
 /usr/local/share/gnuradio/grc/blocks/mytutorial_square2_ff.xml
 /usr/local/share/gnuradio/grc/blocks/mytutorial_multiply_py_ff.xml
 /usr/local/share/gnuradio/grc/blocks/mytutorial_qpsk_demod_py_cb.xml
+/usr/local/share/gnuradio/grc/blocks/mytutorial_my_qpsk_demod_cb.xml
 /usr/local/share/doc/gr-mytutorial/xml/square__ff_8h.xml
 /usr/local/share/doc/gr-mytutorial/xml/square__ff__impl_8h.xml
 /usr/local/share/doc/gr-mytutorial/xml/indexpage.xml

@@ -1,0 +1,6 @@
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="2" time="0.004">
+  <testcase classname="__main__.qa_my_qpsk_demod_cb" name="test_001_gray_code_enabled" time="0.0021"></testcase>
+  <testcase classname="__main__.qa_my_qpsk_demod_cb" name="test_002_gray_code_disabled" time="0.0016"></testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

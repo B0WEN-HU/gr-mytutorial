@@ -1,4 +1,4 @@
-<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="2" time="0.003">
+<testsuite errors="0" failures="0" name="unittest.suite.TestSuite" tests="2" time="0.002">
   <testcase classname="__main__.qa_square_ff" name="test_001_square_ff" time="0.0008"></testcase>
   <testcase classname="__main__.qa_square_ff" name="test_002_square2_ff" time="0.0016"></testcase>
   <system-out><![CDATA[]]></system-out>

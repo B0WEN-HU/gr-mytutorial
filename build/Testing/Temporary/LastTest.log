@@ -1,40 +1,100 @@
-Start testing: May 13 12:40 CST
+Start testing: May 18 22:04 CST
 ----------------------------------------------------------
-1/2 Testing: test_mytutorial
-1/2 Test: test_mytutorial
+1/5 Testing: test_mytutorial
+1/5 Test: test_mytutorial
 Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-mytutorial/build/lib/test_mytutorial_test.sh"
 Directory: /home/bowen/Documents/GR_learn/gr-mytutorial/build/lib
-"test_mytutorial" start time: May 13 12:40 CST
+"test_mytutorial" start time: May 18 22:04 CST
 Output:
 ----------------------------------------------------------
-
+.
 
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_mytutorial" end time: May 13 12:40 CST
+"test_mytutorial" end time: May 18 22:04 CST
 "test_mytutorial" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: qa_square_ff
-2/2 Test: qa_square_ff
+2/5 Testing: qa_square_ff
+2/5 Test: qa_square_ff
 Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/qa_square_ff_test.sh"
 Directory: /home/bowen/Documents/GR_learn/gr-mytutorial/build/python
-"qa_square_ff" start time: May 13 12:40 CST
+"qa_square_ff" start time: May 18 22:04 CST
 Output:
 ----------------------------------------------------------
 ..
 ----------------------------------------------------------------------
-Ran 2 tests in 0.003s
+Ran 2 tests in 0.002s
 
 OK
 <end of output>
 Test time =   0.17 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_square_ff" end time: May 13 12:40 CST
+"qa_square_ff" end time: May 18 22:04 CST
 "qa_square_ff" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 13 12:40 CST
+3/5 Testing: qa_multiply_py_ff
+3/5 Test: qa_multiply_py_ff
+Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/qa_multiply_py_ff_test.sh"
+Directory: /home/bowen/Documents/GR_learn/gr-mytutorial/build/python
+"qa_multiply_py_ff" start time: May 18 22:04 CST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"qa_multiply_py_ff" end time: May 18 22:04 CST
+"qa_multiply_py_ff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: qa_qpsk_demod_py_cb
+4/5 Test: qa_qpsk_demod_py_cb
+Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/qa_qpsk_demod_py_cb_test.sh"
+Directory: /home/bowen/Documents/GR_learn/gr-mytutorial/build/python
+"qa_qpsk_demod_py_cb" start time: May 18 22:04 CST
+Output:
+----------------------------------------------------------
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.004s
+
+OK
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"qa_qpsk_demod_py_cb" end time: May 18 22:04 CST
+"qa_qpsk_demod_py_cb" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: qa_my_qpsk_demod_cb
+5/5 Test: qa_my_qpsk_demod_cb
+Command: "/bin/sh" "/home/bowen/Documents/GR_learn/gr-mytutorial/build/python/qa_my_qpsk_demod_cb_test.sh"
+Directory: /home/bowen/Documents/GR_learn/gr-mytutorial/build/python
+"qa_my_qpsk_demod_cb" start time: May 18 22:04 CST
+Output:
+----------------------------------------------------------
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"qa_my_qpsk_demod_cb" end time: May 18 22:04 CST
+"qa_my_qpsk_demod_cb" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 18 22:04 CST

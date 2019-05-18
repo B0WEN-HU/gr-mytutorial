@@ -22,6 +22,7 @@
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import mytutorial_swig as mytutorial
+from numpy import array
 
 class qa_my_qpsk_demod_cb (gr_unittest.TestCase):
 
@@ -31,11 +32,51 @@ class qa_my_qpsk_demod_cb (gr_unittest.TestCase):
     def tearDown (self):
         self.tb = None
 
-    def test_001_t (self):
+    def test_001_gray_code_enabled (self):
+        Iphase = array([ 1, -1, -1, 1])
+        Qphase = array([ 1, 1, -1, -1])
+
+        src_data = Iphase + 1j*Qphase
+
+        gray_code = True
+
+        expected_result = (0,1,3,2)
+        
+        src = blocks.vector_source_c(src_data)
+        qpsk_demod = mytutorial.my_qpsk_demod_cb(gray_code)
+        dst = blocks.vector_sink_b()
+
+        self.tb.connect(src,qpsk_demod)
+        self.tb.connect(qpsk_demod,dst)
         # set up fg
         self.tb.run ()
         # check data
+        result_data = dst.data()
+        self.assertTupleEqual(expected_result, result_data)
+        self.assertEqual(len(expected_result),len(result_data))
 
+    def test_002_gray_code_disabled (self):
+        Iphase = array([ 1, -1, -1, 1])
+        Qphase = array([ 1, 1, -1, -1])
+
+        src_data = Iphase + 1j*Qphase
+
+        gray_code = False
+
+        expected_result = (0,1,2,3)
+        
+        src = blocks.vector_source_c(src_data)
+        qpsk_demod = mytutorial.my_qpsk_demod_cb(gray_code)
+        dst = blocks.vector_sink_b()
+
+        self.tb.connect(src,qpsk_demod)
+        self.tb.connect(qpsk_demod,dst)
+        # set up fg
+        self.tb.run ()
+        # check data
+        result_data = dst.data()
+        self.assertTupleEqual(expected_result, result_data)
+        self.assertEqual(len(expected_result),len(result_data))
 
 if __name__ == '__main__':
     gr_unittest.run(qa_my_qpsk_demod_cb, "qa_my_qpsk_demod_cb.xml")

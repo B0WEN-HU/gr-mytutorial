@@ -30,6 +30,9 @@ namespace gr {
     {
      private:
       // Nothing to declare in this block.
+      bool d_gray_code;
+
+      unsigned char get_minimum_distances(const gr_complex &sample);
 
      public:
       my_qpsk_demod_cb_impl(bool gray_code);

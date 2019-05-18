@@ -1,3 +1,6 @@
-test_mytutorial 12 0.000247916
-qa_square_ff 5 0.03355
+test_mytutorial 19 0.000185527
+qa_square_ff 12 0.0142432
+qa_multiply_py_ff 7 0.0235456
+qa_qpsk_demod_py_cb 7 0.0240603
+qa_my_qpsk_demod_cb 1 0.173792
 ---

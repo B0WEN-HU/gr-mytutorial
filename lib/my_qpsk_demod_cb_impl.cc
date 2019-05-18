@@ -66,7 +66,7 @@ namespace gr {
     {
       if(d_gray_code) {
         unsigned char bit0 = 0;
-        unsigned char bit1 = 1;
+        unsigned char bit1 = 0;
         
         if (sample.real() < 0) {
           bit0 = 0x01;
