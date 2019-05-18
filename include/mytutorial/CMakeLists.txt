@@ -23,5 +23,6 @@
 install(FILES
     api.h
     square_ff.h
-    square2_ff.h DESTINATION include/mytutorial
+    square2_ff.h
+    my_qpsk_demod_cb.h DESTINATION include/mytutorial
 )
