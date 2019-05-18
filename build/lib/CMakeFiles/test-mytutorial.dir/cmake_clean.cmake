@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test-mytutorial.dir/test_mytutorial.cc.o"
   "CMakeFiles/test-mytutorial.dir/qa_mytutorial.cc.o"
+  "CMakeFiles/test-mytutorial.dir/qa_my_qpsk_demod_cb.cc.o"
   "test-mytutorial.pdb"
   "test-mytutorial"
 )

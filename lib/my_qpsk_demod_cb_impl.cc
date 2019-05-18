@@ -40,8 +40,9 @@ namespace gr {
      */
     my_qpsk_demod_cb_impl::my_qpsk_demod_cb_impl(bool gray_code)
       : gr::block("my_qpsk_demod_cb",
-              gr::io_signature::make(<+MIN_IN+>, <+MAX_IN+>, sizeof(<+ITYPE+>)),
-              gr::io_signature::make(<+MIN_OUT+>, <+MAX_OUT+>, sizeof(<+OTYPE+>)))
+              gr::io_signature::make(1, 1, sizeof(gr_complex)),
+              gr::io_signature::make(1, 1, sizeof(char))),
+        d_gray_code(gray_code)
     {}
 
     /*
@@ -55,6 +56,39 @@ namespace gr {
     my_qpsk_demod_cb_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
     {
       /* <+forecast+> e.g. ninput_items_required[0] = noutput_items */
+      unsigned ninputs = ninput_items_required.size();
+      for(unsigned i = 0; i < ninputs; i++)
+        ninput_items_required[i] = noutput_items;
+    }
+
+    unsigned char
+    my_qpsk_demod_cb_impl::get_minimum_distances(const gr_complex &sample)
+    {
+      if(d_gray_code) {
+        unsigned char bit0 = 0;
+        unsigned char bit1 = 1;
+        
+        if (sample.real() < 0) {
+          bit0 = 0x01;
+        }
+        if (sample.imag() < 0) {
+          bit1 = 0x01 << 1;
+        }
+        return bit0 | bit1;
+      } else {
+        if (sample.imag() >= 0 and sample.real() >= 0) {
+          return 0x00;
+        }
+        else if (sample.imag() >= 0 and sample.real() < 0) {
+          return 0x01;
+        }
+        else if (sample.imag() < 0 and sample.real() < 0) {
+          return 0x02;
+        }
+        else if (sample.imag() < 0 and sample.real() >= 0) {
+          return 0x03;
+        }
+      }
     }
 
     int
@@ -63,10 +97,14 @@ namespace gr {
                        gr_vector_const_void_star &input_items,
                        gr_vector_void_star &output_items)
     {
-      const <+ITYPE+> *in = (const <+ITYPE+> *) input_items[0];
-      <+OTYPE+> *out = (<+OTYPE+> *) output_items[0];
+      const gr_complex *in = (const gr_complex *) input_items[0];
+      unsigned char *out = (unsigned char *) output_items[0];
 
       // Do <+signal processing+>
+      for(int i = 0; i < noutput_items; i++)
+      {
+        out[i] = get_minimum_distances(in[i]);
+      }
       // Tell runtime system how many input items we consumed on
       // each input stream.
       consume_each (noutput_items);

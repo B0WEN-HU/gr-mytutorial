@@ -47,6 +47,12 @@ namespace gr {
        * creating new instances.
        */
       static sptr make(bool gray_code);
+      
+
+      private:
+        bool d_gray_code;
+
+        unsigned char get_minimum_distances(const gr_complex &sample);
     };
 
   } // namespace mytutorial

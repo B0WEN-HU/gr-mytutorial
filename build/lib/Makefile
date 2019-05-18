@@ -197,6 +197,60 @@ gnuradio-mytutorial/fast:
 	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/build
 .PHONY : gnuradio-mytutorial/fast
 
+my_qpsk_demod_cb_impl.o: my_qpsk_demod_cb_impl.cc.o
+
+.PHONY : my_qpsk_demod_cb_impl.o
+
+# target to build an object file
+my_qpsk_demod_cb_impl.cc.o:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/my_qpsk_demod_cb_impl.cc.o
+.PHONY : my_qpsk_demod_cb_impl.cc.o
+
+my_qpsk_demod_cb_impl.i: my_qpsk_demod_cb_impl.cc.i
+
+.PHONY : my_qpsk_demod_cb_impl.i
+
+# target to preprocess a source file
+my_qpsk_demod_cb_impl.cc.i:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/my_qpsk_demod_cb_impl.cc.i
+.PHONY : my_qpsk_demod_cb_impl.cc.i
+
+my_qpsk_demod_cb_impl.s: my_qpsk_demod_cb_impl.cc.s
+
+.PHONY : my_qpsk_demod_cb_impl.s
+
+# target to generate assembly for a file
+my_qpsk_demod_cb_impl.cc.s:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/my_qpsk_demod_cb_impl.cc.s
+.PHONY : my_qpsk_demod_cb_impl.cc.s
+
+qa_my_qpsk_demod_cb.o: qa_my_qpsk_demod_cb.cc.o
+
+.PHONY : qa_my_qpsk_demod_cb.o
+
+# target to build an object file
+qa_my_qpsk_demod_cb.cc.o:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/qa_my_qpsk_demod_cb.cc.o
+.PHONY : qa_my_qpsk_demod_cb.cc.o
+
+qa_my_qpsk_demod_cb.i: qa_my_qpsk_demod_cb.cc.i
+
+.PHONY : qa_my_qpsk_demod_cb.i
+
+# target to preprocess a source file
+qa_my_qpsk_demod_cb.cc.i:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/qa_my_qpsk_demod_cb.cc.i
+.PHONY : qa_my_qpsk_demod_cb.cc.i
+
+qa_my_qpsk_demod_cb.s: qa_my_qpsk_demod_cb.cc.s
+
+.PHONY : qa_my_qpsk_demod_cb.s
+
+# target to generate assembly for a file
+qa_my_qpsk_demod_cb.cc.s:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/test-mytutorial.dir/build.make lib/CMakeFiles/test-mytutorial.dir/qa_my_qpsk_demod_cb.cc.s
+.PHONY : qa_my_qpsk_demod_cb.cc.s
+
 qa_mytutorial.o: qa_mytutorial.cc.o
 
 .PHONY : qa_mytutorial.o
@@ -320,6 +374,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... my_qpsk_demod_cb_impl.o"
+	@echo "... my_qpsk_demod_cb_impl.i"
+	@echo "... my_qpsk_demod_cb_impl.s"
+	@echo "... qa_my_qpsk_demod_cb.o"
+	@echo "... qa_my_qpsk_demod_cb.i"
+	@echo "... qa_my_qpsk_demod_cb.s"
 	@echo "... qa_mytutorial.o"
 	@echo "... qa_mytutorial.i"
 	@echo "... qa_mytutorial.s"
