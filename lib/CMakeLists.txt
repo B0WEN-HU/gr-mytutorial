@@ -29,6 +29,7 @@ list(APPEND mytutorial_sources
     square_ff_impl.cc
     square2_ff_impl.cc
     my_qpsk_demod_cb_impl.cc
+    Vflicker_impl.cc
 )
 
 set(mytutorial_sources "${mytutorial_sources}" PARENT_SCOPE)

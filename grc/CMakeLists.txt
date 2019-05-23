@@ -22,5 +22,6 @@ install(FILES
     mytutorial_square2_ff.xml
     mytutorial_multiply_py_ff.xml
     mytutorial_qpsk_demod_py_cb.xml
-    mytutorial_my_qpsk_demod_cb.xml DESTINATION share/gnuradio/grc/blocks
+    mytutorial_my_qpsk_demod_cb.xml
+    mytutorial_Vflicker.xml DESTINATION share/gnuradio/grc/blocks
 )
