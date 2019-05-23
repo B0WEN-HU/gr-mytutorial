@@ -18,22 +18,22 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_MYTUTORIAL_VFLICKER_IMPL_H
-#define INCLUDED_MYTUTORIAL_VFLICKER_IMPL_H
+#ifndef INCLUDED_MYTUTORIAL_VFLICKER_SIM_IMPL_H
+#define INCLUDED_MYTUTORIAL_VFLICKER_SIM_IMPL_H
 
-#include <mytutorial/Vflicker.h>
+#include <mytutorial/Vflicker_sim.h>
 
 namespace gr {
   namespace mytutorial {
 
-    class Vflicker_impl : public Vflicker
+    class Vflicker_sim_impl : public Vflicker_sim
     {
      private:
       // Nothing to declare in this block.
 
      public:
-      Vflicker_impl();
-      ~Vflicker_impl();
+      Vflicker_sim_impl();
+      ~Vflicker_sim_impl();
 
       // Where all the action really happens
       int work(int noutput_items,
@@ -44,5 +44,5 @@ namespace gr {
   } // namespace mytutorial
 } // namespace gr
 
-#endif /* INCLUDED_MYTUTORIAL_VFLICKER_IMPL_H */
+#endif /* INCLUDED_MYTUTORIAL_VFLICKER_SIM_IMPL_H */
 

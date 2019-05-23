@@ -24,13 +24,11 @@ include(GrPlatform) #define LIB_SUFFIX
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND mytutorial_sources
     square_ff_impl.cc
     square2_ff_impl.cc
     my_qpsk_demod_cb_impl.cc
-    Vflicker_impl.cc
-)
+    Vflicker_sim_impl.cc )
 
 set(mytutorial_sources "${mytutorial_sources}" PARENT_SCOPE)
 if(NOT mytutorial_sources)

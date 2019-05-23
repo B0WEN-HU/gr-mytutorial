@@ -16,12 +16,11 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
     mytutorial_square_ff.xml
     mytutorial_square2_ff.xml
     mytutorial_multiply_py_ff.xml
     mytutorial_qpsk_demod_py_cb.xml
     mytutorial_my_qpsk_demod_cb.xml
-    mytutorial_Vflicker.xml DESTINATION share/gnuradio/grc/blocks
+    mytutorial_Vflicker_sim.xml DESTINATION share/gnuradio/grc/blocks
 )

@@ -23,7 +23,7 @@ from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import mytutorial_swig as mytutorial
 
-class qa_Vflicker (gr_unittest.TestCase):
+class qa_Vflicker_sim (gr_unittest.TestCase):
 
     def setUp (self):
         self.tb = gr.top_block ()
@@ -38,4 +38,4 @@ class qa_Vflicker (gr_unittest.TestCase):
 
 
 if __name__ == '__main__':
-    gr_unittest.run(qa_Vflicker, "qa_Vflicker.xml")
+    gr_unittest.run(qa_Vflicker_sim, "qa_Vflicker_sim.xml")

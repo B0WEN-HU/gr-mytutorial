@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <block>
-  <name>Vflicker</name>
-  <key>mytutorial_Vflicker</key>
+  <name>Vflicker_sim</name>
+  <key>mytutorial_Vflicker_sim</key>
   <category>[mytutorial]</category>
   <import>import mytutorial</import>
-  <make>mytutorial.Vflicker()</make>
+  <make>mytutorial.Vflicker_sim()</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
