@@ -22,5 +22,5 @@ install(FILES
     mytutorial_multiply_py_ff.xml
     mytutorial_qpsk_demod_py_cb.xml
     mytutorial_my_qpsk_demod_cb.xml
-    mytutorial_Vflicker_sim.xml DESTINATION share/gnuradio/grc/blocks
+    mytutorial_Vflicker_sim_dl.xml DESTINATION share/gnuradio/grc/blocks
 )

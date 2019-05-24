@@ -1,6 +1,8 @@
-test_mytutorial 19 0.000185527
-qa_square_ff 12 0.0142432
-qa_multiply_py_ff 7 0.0235456
-qa_qpsk_demod_py_cb 7 0.0240603
-qa_my_qpsk_demod_cb 1 0.173792
+test_mytutorial 21 0.000136954
+qa_square_ff 14 0.0120234
+qa_multiply_py_ff 9 0.018506
+qa_qpsk_demod_py_cb 9 0.0189498
+qa_my_qpsk_demod_cb 3 0.0570974
+qa_Vflicker_sim_dl 0 0
 ---
+qa_Vflicker_sim_dl

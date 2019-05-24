@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/mytutorial/Vflicker_sim_dl.h
+mytutorial/api.h
+-
+gnuradio/sync_block.h
+-
+
 ../include/mytutorial/api.h
 gnuradio/attributes.h
 -
@@ -81,6 +87,8 @@ mytutorial/square2_ff.h
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/mytutorial/square2_ff.h
 mytutorial/my_qpsk_demod_cb.h
 /home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/mytutorial/my_qpsk_demod_cb.h
+mytutorial/Vflicker_sim_dl.h
+/home/bowen/Documents/GR_learn/gr-mytutorial/build/swig/mytutorial/Vflicker_sim_dl.h
 float.h
 -
 math.h

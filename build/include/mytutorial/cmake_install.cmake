@@ -43,6 +43,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/bowen/Documents/GR_learn/gr-mytutorial/include/mytutorial/square_ff.h"
     "/home/bowen/Documents/GR_learn/gr-mytutorial/include/mytutorial/square2_ff.h"
     "/home/bowen/Documents/GR_learn/gr-mytutorial/include/mytutorial/my_qpsk_demod_cb.h"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/include/mytutorial/Vflicker_sim_dl.h"
     )
 endif()
 

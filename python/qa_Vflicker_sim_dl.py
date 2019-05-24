@@ -23,7 +23,7 @@ from gnuradio import gr, gr_unittest
 from gnuradio import blocks
 import mytutorial_swig as mytutorial
 
-class qa_Vflicker_sim (gr_unittest.TestCase):
+class qa_Vflicker_sim_dl (gr_unittest.TestCase):
 
     def setUp (self):
         self.tb = gr.top_block ()
@@ -33,9 +33,19 @@ class qa_Vflicker_sim (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
+        expected_result = (0, 31, 0, 31, 0)
+        
+        vlmodule = mytutorial.Vflicker_sim_dl()
+        dst = blocks.vector_sink_b()
+
+        self.tb.connect(vlmodule,dst)
+
         self.tb.run ()
         # check data
+        result_data = dst.data()
+        self.assertTupleEqual(expected_result, result_data)
+        self.assertEqual(len(expected_result),len(result_data))
 
 
 if __name__ == '__main__':
-    gr_unittest.run(qa_Vflicker_sim, "qa_Vflicker_sim.xml")
+    gr_unittest.run(qa_Vflicker_sim_dl, "qa_Vflicker_sim_dl.xml")

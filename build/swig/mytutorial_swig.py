@@ -1230,5 +1230,365 @@ my_qpsk_demod_cb_sptr_swigregister(my_qpsk_demod_cb_sptr)
 my_qpsk_demod_cb_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
 my_qpsk_demod_cb = my_qpsk_demod_cb.make;
 
+class Vflicker_sim_dl(object):
+    """Proxy of C++ gr::mytutorial::Vflicker_sim_dl class."""
+
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+
+    def make():
+        """make() -> Vflicker_sim_dl_sptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_make()
+
+    make = staticmethod(make)
+    __swig_destroy__ = _mytutorial_swig.delete_Vflicker_sim_dl
+    __del__ = lambda self: None
+Vflicker_sim_dl_swigregister = _mytutorial_swig.Vflicker_sim_dl_swigregister
+Vflicker_sim_dl_swigregister(Vflicker_sim_dl)
+
+def Vflicker_sim_dl_make():
+    """Vflicker_sim_dl_make() -> Vflicker_sim_dl_sptr"""
+    return _mytutorial_swig.Vflicker_sim_dl_make()
+
+class Vflicker_sim_dl_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::mytutorial::Vflicker_sim_dl)> class."""
+
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        """
+        __init__(boost::shared_ptr<(gr::mytutorial::Vflicker_sim_dl)> self) -> Vflicker_sim_dl_sptr
+        __init__(boost::shared_ptr<(gr::mytutorial::Vflicker_sim_dl)> self, Vflicker_sim_dl p) -> Vflicker_sim_dl_sptr
+        """
+        this = _mytutorial_swig.new_Vflicker_sim_dl_sptr(*args)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+
+    def __deref__(self):
+        """__deref__(Vflicker_sim_dl_sptr self) -> Vflicker_sim_dl"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr___deref__(self)
+
+    __swig_destroy__ = _mytutorial_swig.delete_Vflicker_sim_dl_sptr
+    __del__ = lambda self: None
+
+    def make(self):
+        """make(Vflicker_sim_dl_sptr self) -> Vflicker_sim_dl_sptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_make(self)
+
+
+    def history(self):
+        """history(Vflicker_sim_dl_sptr self) -> unsigned int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_history(self)
+
+
+    def declare_sample_delay(self, *args):
+        """
+        declare_sample_delay(Vflicker_sim_dl_sptr self, int which, int delay)
+        declare_sample_delay(Vflicker_sim_dl_sptr self, unsigned int delay)
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_declare_sample_delay(self, *args)
+
+
+    def sample_delay(self, which):
+        """sample_delay(Vflicker_sim_dl_sptr self, int which) -> unsigned int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_sample_delay(self, which)
+
+
+    def output_multiple(self):
+        """output_multiple(Vflicker_sim_dl_sptr self) -> int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_output_multiple(self)
+
+
+    def relative_rate(self):
+        """relative_rate(Vflicker_sim_dl_sptr self) -> double"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_relative_rate(self)
+
+
+    def start(self):
+        """start(Vflicker_sim_dl_sptr self) -> bool"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_start(self)
+
+
+    def stop(self):
+        """stop(Vflicker_sim_dl_sptr self) -> bool"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_stop(self)
+
+
+    def nitems_read(self, which_input):
+        """nitems_read(Vflicker_sim_dl_sptr self, unsigned int which_input) -> uint64_t"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_nitems_read(self, which_input)
+
+
+    def nitems_written(self, which_output):
+        """nitems_written(Vflicker_sim_dl_sptr self, unsigned int which_output) -> uint64_t"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_nitems_written(self, which_output)
+
+
+    def max_noutput_items(self):
+        """max_noutput_items(Vflicker_sim_dl_sptr self) -> int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_max_noutput_items(self)
+
+
+    def set_max_noutput_items(self, m):
+        """set_max_noutput_items(Vflicker_sim_dl_sptr self, int m)"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_set_max_noutput_items(self, m)
+
+
+    def unset_max_noutput_items(self):
+        """unset_max_noutput_items(Vflicker_sim_dl_sptr self)"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_unset_max_noutput_items(self)
+
+
+    def is_set_max_noutput_items(self):
+        """is_set_max_noutput_items(Vflicker_sim_dl_sptr self) -> bool"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_is_set_max_noutput_items(self)
+
+
+    def set_min_noutput_items(self, m):
+        """set_min_noutput_items(Vflicker_sim_dl_sptr self, int m)"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_set_min_noutput_items(self, m)
+
+
+    def min_noutput_items(self):
+        """min_noutput_items(Vflicker_sim_dl_sptr self) -> int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_min_noutput_items(self)
+
+
+    def max_output_buffer(self, i):
+        """max_output_buffer(Vflicker_sim_dl_sptr self, int i) -> long"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_max_output_buffer(self, i)
+
+
+    def set_max_output_buffer(self, *args):
+        """
+        set_max_output_buffer(Vflicker_sim_dl_sptr self, long max_output_buffer)
+        set_max_output_buffer(Vflicker_sim_dl_sptr self, int port, long max_output_buffer)
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_set_max_output_buffer(self, *args)
+
+
+    def min_output_buffer(self, i):
+        """min_output_buffer(Vflicker_sim_dl_sptr self, int i) -> long"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_min_output_buffer(self, i)
+
+
+    def set_min_output_buffer(self, *args):
+        """
+        set_min_output_buffer(Vflicker_sim_dl_sptr self, long min_output_buffer)
+        set_min_output_buffer(Vflicker_sim_dl_sptr self, int port, long min_output_buffer)
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_set_min_output_buffer(self, *args)
+
+
+    def pc_noutput_items(self):
+        """pc_noutput_items(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_noutput_items(self)
+
+
+    def pc_noutput_items_avg(self):
+        """pc_noutput_items_avg(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_noutput_items_avg(self)
+
+
+    def pc_noutput_items_var(self):
+        """pc_noutput_items_var(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_noutput_items_var(self)
+
+
+    def pc_nproduced(self):
+        """pc_nproduced(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_nproduced(self)
+
+
+    def pc_nproduced_avg(self):
+        """pc_nproduced_avg(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_nproduced_avg(self)
+
+
+    def pc_nproduced_var(self):
+        """pc_nproduced_var(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_nproduced_var(self)
+
+
+    def pc_input_buffers_full(self, *args):
+        """
+        pc_input_buffers_full(Vflicker_sim_dl_sptr self, int which) -> float
+        pc_input_buffers_full(Vflicker_sim_dl_sptr self) -> pmt_vector_float
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_input_buffers_full(self, *args)
+
+
+    def pc_input_buffers_full_avg(self, *args):
+        """
+        pc_input_buffers_full_avg(Vflicker_sim_dl_sptr self, int which) -> float
+        pc_input_buffers_full_avg(Vflicker_sim_dl_sptr self) -> pmt_vector_float
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_input_buffers_full_avg(self, *args)
+
+
+    def pc_input_buffers_full_var(self, *args):
+        """
+        pc_input_buffers_full_var(Vflicker_sim_dl_sptr self, int which) -> float
+        pc_input_buffers_full_var(Vflicker_sim_dl_sptr self) -> pmt_vector_float
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_input_buffers_full_var(self, *args)
+
+
+    def pc_output_buffers_full(self, *args):
+        """
+        pc_output_buffers_full(Vflicker_sim_dl_sptr self, int which) -> float
+        pc_output_buffers_full(Vflicker_sim_dl_sptr self) -> pmt_vector_float
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_output_buffers_full(self, *args)
+
+
+    def pc_output_buffers_full_avg(self, *args):
+        """
+        pc_output_buffers_full_avg(Vflicker_sim_dl_sptr self, int which) -> float
+        pc_output_buffers_full_avg(Vflicker_sim_dl_sptr self) -> pmt_vector_float
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_output_buffers_full_avg(self, *args)
+
+
+    def pc_output_buffers_full_var(self, *args):
+        """
+        pc_output_buffers_full_var(Vflicker_sim_dl_sptr self, int which) -> float
+        pc_output_buffers_full_var(Vflicker_sim_dl_sptr self) -> pmt_vector_float
+        """
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_output_buffers_full_var(self, *args)
+
+
+    def pc_work_time(self):
+        """pc_work_time(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_work_time(self)
+
+
+    def pc_work_time_avg(self):
+        """pc_work_time_avg(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_work_time_avg(self)
+
+
+    def pc_work_time_var(self):
+        """pc_work_time_var(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_work_time_var(self)
+
+
+    def pc_work_time_total(self):
+        """pc_work_time_total(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_work_time_total(self)
+
+
+    def pc_throughput_avg(self):
+        """pc_throughput_avg(Vflicker_sim_dl_sptr self) -> float"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_pc_throughput_avg(self)
+
+
+    def set_processor_affinity(self, mask):
+        """set_processor_affinity(Vflicker_sim_dl_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_set_processor_affinity(self, mask)
+
+
+    def unset_processor_affinity(self):
+        """unset_processor_affinity(Vflicker_sim_dl_sptr self)"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_unset_processor_affinity(self)
+
+
+    def processor_affinity(self):
+        """processor_affinity(Vflicker_sim_dl_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_processor_affinity(self)
+
+
+    def active_thread_priority(self):
+        """active_thread_priority(Vflicker_sim_dl_sptr self) -> int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_active_thread_priority(self)
+
+
+    def thread_priority(self):
+        """thread_priority(Vflicker_sim_dl_sptr self) -> int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_thread_priority(self)
+
+
+    def set_thread_priority(self, priority):
+        """set_thread_priority(Vflicker_sim_dl_sptr self, int priority) -> int"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_set_thread_priority(self, priority)
+
+
+    def name(self):
+        """name(Vflicker_sim_dl_sptr self) -> std::string"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_name(self)
+
+
+    def symbol_name(self):
+        """symbol_name(Vflicker_sim_dl_sptr self) -> std::string"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_symbol_name(self)
+
+
+    def input_signature(self):
+        """input_signature(Vflicker_sim_dl_sptr self) -> io_signature_sptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_input_signature(self)
+
+
+    def output_signature(self):
+        """output_signature(Vflicker_sim_dl_sptr self) -> io_signature_sptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_output_signature(self)
+
+
+    def unique_id(self):
+        """unique_id(Vflicker_sim_dl_sptr self) -> long"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_unique_id(self)
+
+
+    def to_basic_block(self):
+        """to_basic_block(Vflicker_sim_dl_sptr self) -> basic_block_sptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_to_basic_block(self)
+
+
+    def check_topology(self, ninputs, noutputs):
+        """check_topology(Vflicker_sim_dl_sptr self, int ninputs, int noutputs) -> bool"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_check_topology(self, ninputs, noutputs)
+
+
+    def alias(self):
+        """alias(Vflicker_sim_dl_sptr self) -> std::string"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_alias(self)
+
+
+    def set_block_alias(self, name):
+        """set_block_alias(Vflicker_sim_dl_sptr self, std::string name)"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_set_block_alias(self, name)
+
+
+    def _post(self, which_port, msg):
+        """_post(Vflicker_sim_dl_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr__post(self, which_port, msg)
+
+
+    def message_ports_in(self):
+        """message_ports_in(Vflicker_sim_dl_sptr self) -> swig_int_ptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_message_ports_in(self)
+
+
+    def message_ports_out(self):
+        """message_ports_out(Vflicker_sim_dl_sptr self) -> swig_int_ptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_message_ports_out(self)
+
+
+    def message_subscribers(self, which_port):
+        """message_subscribers(Vflicker_sim_dl_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _mytutorial_swig.Vflicker_sim_dl_sptr_message_subscribers(self, which_port)
+
+Vflicker_sim_dl_sptr_swigregister = _mytutorial_swig.Vflicker_sim_dl_sptr_swigregister
+Vflicker_sim_dl_sptr_swigregister(Vflicker_sim_dl_sptr)
+
+
+Vflicker_sim_dl_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+Vflicker_sim_dl = Vflicker_sim_dl.make;
+
 
 

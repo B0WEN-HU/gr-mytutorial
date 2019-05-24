@@ -25,5 +25,5 @@ install(FILES
     square_ff.h
     square2_ff.h
     my_qpsk_demod_cb.h
-    Vflicker_sim.h DESTINATION include/mytutorial
+    Vflicker_sim_dl.h DESTINATION include/mytutorial
 )

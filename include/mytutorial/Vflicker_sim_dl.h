@@ -18,31 +18,39 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_MYTUTORIAL_VFLICKER_SIM_IMPL_H
-#define INCLUDED_MYTUTORIAL_VFLICKER_SIM_IMPL_H
 
-#include <mytutorial/Vflicker_sim.h>
+#ifndef INCLUDED_MYTUTORIAL_VFLICKER_SIM_DL_H
+#define INCLUDED_MYTUTORIAL_VFLICKER_SIM_DL_H
+
+#include <mytutorial/api.h>
+#include <gnuradio/sync_block.h>
 
 namespace gr {
   namespace mytutorial {
 
-    class Vflicker_sim_impl : public Vflicker_sim
+    /*!
+     * \brief <+description of block+>
+     * \ingroup mytutorial
+     *
+     */
+    class MYTUTORIAL_API Vflicker_sim_dl : virtual public gr::sync_block
     {
-     private:
-      // Nothing to declare in this block.
-
      public:
-      Vflicker_sim_impl();
-      ~Vflicker_sim_impl();
+      typedef boost::shared_ptr<Vflicker_sim_dl> sptr;
 
-      // Where all the action really happens
-      int work(int noutput_items,
-         gr_vector_const_void_star &input_items,
-         gr_vector_void_star &output_items);
+      /*!
+       * \brief Return a shared_ptr to a new instance of mytutorial::Vflicker_sim_dl.
+       *
+       * To avoid accidental use of raw pointers, mytutorial::Vflicker_sim_dl's
+       * constructor is in a private implementation
+       * class. mytutorial::Vflicker_sim_dl::make is the public interface for
+       * creating new instances.
+       */
+      static sptr make();
     };
 
   } // namespace mytutorial
 } // namespace gr
 
-#endif /* INCLUDED_MYTUTORIAL_VFLICKER_SIM_IMPL_H */
+#endif /* INCLUDED_MYTUTORIAL_VFLICKER_SIM_DL_H */
 

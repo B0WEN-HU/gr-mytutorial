@@ -44,6 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_multiply_py_ff.xml"
     "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_qpsk_demod_py_cb.xml"
     "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_my_qpsk_demod_cb.xml"
+    "/home/bowen/Documents/GR_learn/gr-mytutorial/grc/mytutorial_Vflicker_sim_dl.xml"
     )
 endif()
 

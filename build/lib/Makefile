@@ -197,6 +197,33 @@ gnuradio-mytutorial/fast:
 	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/build
 .PHONY : gnuradio-mytutorial/fast
 
+Vflicker_sim_dl_impl.o: Vflicker_sim_dl_impl.cc.o
+
+.PHONY : Vflicker_sim_dl_impl.o
+
+# target to build an object file
+Vflicker_sim_dl_impl.cc.o:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/Vflicker_sim_dl_impl.cc.o
+.PHONY : Vflicker_sim_dl_impl.cc.o
+
+Vflicker_sim_dl_impl.i: Vflicker_sim_dl_impl.cc.i
+
+.PHONY : Vflicker_sim_dl_impl.i
+
+# target to preprocess a source file
+Vflicker_sim_dl_impl.cc.i:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/Vflicker_sim_dl_impl.cc.i
+.PHONY : Vflicker_sim_dl_impl.cc.i
+
+Vflicker_sim_dl_impl.s: Vflicker_sim_dl_impl.cc.s
+
+.PHONY : Vflicker_sim_dl_impl.s
+
+# target to generate assembly for a file
+Vflicker_sim_dl_impl.cc.s:
+	cd /home/bowen/Documents/GR_learn/gr-mytutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mytutorial.dir/build.make lib/CMakeFiles/gnuradio-mytutorial.dir/Vflicker_sim_dl_impl.cc.s
+.PHONY : Vflicker_sim_dl_impl.cc.s
+
 my_qpsk_demod_cb_impl.o: my_qpsk_demod_cb_impl.cc.o
 
 .PHONY : my_qpsk_demod_cb_impl.o
@@ -374,6 +401,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Vflicker_sim_dl_impl.o"
+	@echo "... Vflicker_sim_dl_impl.i"
+	@echo "... Vflicker_sim_dl_impl.s"
 	@echo "... my_qpsk_demod_cb_impl.o"
 	@echo "... my_qpsk_demod_cb_impl.i"
 	@echo "... my_qpsk_demod_cb_impl.s"
