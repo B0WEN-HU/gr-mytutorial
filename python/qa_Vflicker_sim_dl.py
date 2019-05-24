@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 
-# Copyright 2019 <+YOU OR YOUR COMPANY+>.
+# Copyright 2019 Bowen Hu.
 # 
 # This is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -33,12 +33,16 @@ class qa_Vflicker_sim_dl (gr_unittest.TestCase):
 
     def test_001_t (self):
         # set up fg
-        expected_result = (0, 31, 0, 31, 0)
+        item_number = 10
+
+        expected_result = (31, 0, 31, 0, 31, 0, 31, 0, 31, 0)
         
         vlmodule = mytutorial.Vflicker_sim_dl()
+        relay = blocks.head(gr.sizeof_char*1, item_number)
         dst = blocks.vector_sink_b()
 
-        self.tb.connect(vlmodule,dst)
+        self.tb.connect(vlmodule, relay)
+        self.tb.connect(relay, dst)
 
         self.tb.run ()
         # check data
